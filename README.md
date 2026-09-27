@@ -55,9 +55,9 @@ kubectl get svc
 kubectl get endpoints netology-svc
 ```
 
-`kubectl get endpoints netology-svc` должен показать адрес только Pod `netology-web`.
+`kubectl get endpoints netology-svc` должен показывает адрес только Pod `netology-web`.
 
-![Вывод kubectl get pods и kubectl get svc](screenshots/get-pods.png)
+![Скриншот 3](screenshots/scr2_1.png)
 
 Подключение к Service со своего локального компьютера:
 
@@ -66,16 +66,6 @@ kubectl port-forward service/netology-svc 8081:80
 curl http://localhost:8081
 ```
 
-![Подключение к Service netology-svc](screenshots/netology-svc.png)
+![Скриншот 4](screenshots/scr2_2.png)
 
-## Использованные команды
 
-| Команда | Назначение |
-|---|---|
-| `kubectl apply -f <манифест>` | создание ресурса из манифеста |
-| `kubectl get pods` | список Pod и их состояние |
-| `kubectl get svc` | список Service |
-| `kubectl get endpoints <service>` | Pod, к которым привязан Service |
-| `kubectl port-forward pod/<pod> <локальный>:<порт>` | проброс порта Pod на локальную машину |
-| `kubectl port-forward service/<svc> <локальный>:<порт>` | проброс порта Service на локальную машину |
-| `curl http://localhost:<порт>` | проверка ответа приложения |
