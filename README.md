@@ -55,7 +55,7 @@ kubectl get svc
 kubectl get endpoints netology-svc
 ```
 
-`kubectl get endpoints netology-svc` должен показывает адрес только Pod `netology-web`.
+`kubectl get endpoints netology-svc` показывает адрес только Pod `netology-web`.
 
 ![Скриншот 3](screenshots/scr2_1.png)
 
@@ -67,5 +67,4 @@ curl http://localhost:8081
 ```
 
 ![Скриншот 4](screenshots/scr2_2.png)
-
 
