@@ -1,0 +1,14 @@
+#create_service_netologysvc.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: netology-svc
+spec:
+  ports:
+  - name: web
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: netology-web
